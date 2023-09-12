@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        tml{
+            font-size: 10px;
+        }
+        body{
+            background-color: #111;
+            background-image: radial-gradient(#333, #111);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+            width: 100vw;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        #fly-in {
+            font-size: 4rem;
+            margin: 40vh auto;
+            height: 20vh;
+            text-transform: uppercase;
+        }
+        #fly-in span {
+            display: block;
+            font-size: 3.2rem;
+            opacity: 0.8;
+        }
+        #fly-in div {
+            position: fixed;
+            margin: 2vh 0;
+            opacity: 0;
+            left: 0vw;
+            width: 100vw;
+            margin: auto;
+            animation: switch-revert 6s linear;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards;
+        }
+        #fly-in div:nth-child(2) {
+            animation-delay: 3.9s;
+        }
+        #fly-in div:nth-child(3) {
+            animation-delay: 6s;
+        }
+        @keyframes switch-revert {
+            5%{
+                opacity: 1;
+                filter: blur(0);
+                transform: scale();
+                letter-spacing: 0px
+            }
+            40%{
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+                letter-spacing: 1px;
+            }
+            50%{
+                opacity: 0;
+                filter: blur(20px);
+                transform: scale(12);
+                letter-spacing: 2px;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+  </style>
+</head>
+<body
+    <main id="fly-in">
+        <div>
+            不安全家庭守则<span>Unsafe family rules</span>
+        </div>
+        <div>制作团队：元组<span>Production Team: Tuple</span></div>
+    </main>
+</body>
+</html>
+<script>
+    // var second=6;
+    // function Record(){
+    //     second--;
+    //     if(second<0) {
+    //         location.href = "../index.html";
+    //     }
+    // }
+    // setInterval(Record,1000);
+    // 此处是跳转到游戏主页的计时器跳转功能，
+</script>
+<script src="../js/zishiying.js"></script>
+<!-- 这是一个页面自适应动态计算的功能 -->
