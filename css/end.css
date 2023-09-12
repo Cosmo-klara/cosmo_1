@@ -1,0 +1,37 @@
+
+body {
+    background-color: #0e141b;
+    color: #e0e6eb;
+    font-family: 'Jura';
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+.column,
+.colon {
+    display: inline-block;
+    font-size: 6.4rem;
+    line-height: 8.2rem;
+    text-align: center;
+}
+.column {
+    transition: 0.3s;
+}
+.num {
+    opacity: 0;
+    transition: 0.3s;
+}
+.num.visible {
+    opacity: 1;
+    text-shadow: 1px 1px 0 #828080;
+}
+.num.near {
+    opacity: 0.5;
+}
+.num.far {
+    opacity: 0;
+}
+.num.distant {
+    opacity: 0;
+}
